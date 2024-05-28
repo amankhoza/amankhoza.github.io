@@ -1,0 +1,21 @@
+#player {
+  width: 450px;
+  height: 450px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #212121; /* Material Dark Background */
+}
+
+#player button {
+  background: none;
+  border: none;
+  padding: 20px;
+  margin: 0 15px; /* Adjust spacing between buttons */
+  cursor: pointer;
+}
+
+#player img {
+  filter: invert(1); /* White icons on dark background */
+}
