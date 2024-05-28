@@ -1,19 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Circular Music UI</title>
-    <style>
-        body {
-            background-color: #eb4034; /* Dark background to contrast with the UI */
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh; /* Ensure the UI is centered vertically */
-            margin: 0;
-        }
-    </style>
+  <title>Circular Media Player</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <script src="script.js"></script> </body>
+  <div id="player">
+    <button id="prev"><img src="https://fonts.gstatic.com/s/i/materialicons/skip_previous/v14/24px.svg" alt="Previous"></button>
+    <button id="playPause"><img src="https://fonts.gstatic.com/s/i/materialicons/play_arrow/v14/24px.svg" alt="Play/Pause"></button>
+    <button id="next"><img src="https://fonts.gstatic.com/s/i/materialicons/skip_next/v14/24px.svg" alt="Next"></button>
+  </div>
+  <script src="script.js"></script>
+</body>
 </html>
