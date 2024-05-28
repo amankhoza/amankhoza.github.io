@@ -1,21 +1,41 @@
-#player {
-  width: 450px;
-  height: 450px;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #212121; /* Material Dark Background */
+body, html { 
+    height: 100%; 
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #212121; /* Dark background */
 }
 
-#player button {
-  background: none;
-  border: none;
-  padding: 20px;
-  margin: 0 15px; /* Adjust spacing between buttons */
-  cursor: pointer;
+#musicPlayer {
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    background-color: #303030; /* Slightly lighter background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
 }
 
-#player img {
-  filter: invert(1); /* White icons on dark background */
+.button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #424242; /* Button color */
+    cursor: pointer;
+    transition: background-color 0.2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button:active {
+    background-color: #5a5a5a; /* Active/pressed state */
+}
+
+.button img {
+    width: 30px;
+    height: 30px;
 }
